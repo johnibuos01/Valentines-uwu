@@ -28,7 +28,7 @@
 <button id="noBtn">No</button>
 
 <div id="gifSlot">
-  <img id="monkey" src="valentines/kiss.png" alt="Heart" width="200">
+  <img id="monkey" src="Valentines-uwu/kiss.png" alt="Heart" width="200">
 </div>
 
 <script>
