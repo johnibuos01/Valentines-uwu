@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valentine's Day</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  #gifSlot {
+    display: none; /* Initially hidden */
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+<h2>Will you be my Valentine?</h2>
+<button id="yesBtn">Yes</button>
+<button id="noBtn">No</button>
+
+<div id="gifSlot">
+  <img id="monkey" src="valentines/kiss.png" alt="Heart" width="200">
+</div>
+
+<script>
+  document.getElementById("yesBtn").addEventListener("click", function() {
+    document.getElementById("gifSlot").style.display = "block";
+  });
+
+  document.getElementById("noBtn").addEventListener("click", function() {
+    var noButton = document.getElementById("noBtn");
+    noButton.style.position = "absolute";
+    noButton.style.left = Math.random() * (window.innerWidth - noButton.offsetWidth) + "px";
+    noButton.style.top = Math.random() * (window.innerHeight - noButton.offsetHeight) + "px";
+  });
+</script>
+
+</body>
+</html>
